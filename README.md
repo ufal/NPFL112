@@ -1,6 +1,6 @@
 # NPFL112
 teaching materials to the NPFL112 course (R for humanities students).
-The materials come as `revealjs` presentations with very extensive speaker's notes. To see the notes, press s when viewing them. 
+The materials come as `revealjs` presentations with very extensive speaker's notes. To see the notes, press s when viewing. 
 
 ## Introduction 
 https://ufal.github.io/NPFL112/01_Introduction.html
