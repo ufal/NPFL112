@@ -35,3 +35,4 @@ https://ufal.github.io/NPFL112/16_functions.html
 https://ufal.github.io/NPFL112/18_LinearRegression.html
 
 ## `tidyr`
+https://ufal.github.io/NPFL112/15_tidyr_stringr.html
