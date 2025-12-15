@@ -12,7 +12,7 @@ https://ufal.github.io/NPFL112/03_RStudioFileManagement.html
 
 https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html
 
-## Variables and Functions I
+## Variables and Functions (more about functions later)
 https://ufal.github.io/NPFL112/05_VariablesFunctions.html 
 
 ## Working Directory
