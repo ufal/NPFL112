@@ -34,5 +34,7 @@ https://ufal.github.io/NPFL112/16_functions.html
 ## Linear Regression
 https://ufal.github.io/NPFL112/18_LinearRegression.html
 
-## `tidyr`
+## `tidyr`: separating and uniting column values, pivoting
 https://ufal.github.io/NPFL112/15_tidyr_stringr.html
+
+## JSON data from an API: Convert to data frame with `tidyr` and rectangle  
