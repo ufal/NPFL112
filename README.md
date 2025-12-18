@@ -38,3 +38,4 @@ https://ufal.github.io/NPFL112/18_LinearRegression.html
 https://ufal.github.io/NPFL112/15_tidyr_stringr.html
 
 ## JSON data from an API: Convert to data frame and process with `tidyr`  
+https://ufal.github.io/NPFL112/17_from_json.html
