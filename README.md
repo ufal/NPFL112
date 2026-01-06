@@ -21,8 +21,11 @@ https://ufal.github.io/NPFL112/06_WorkingDirectory.html
 ## Exploring dataframes
 https://ufal.github.io/NPFL112/07_Exploring_dataframes.html
 
+## `ggplot2`
+https://ufal.github.io/NPFL112/08_DiversePlots.html
+
 ## `dplyr` 
-https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html08_DiversePlots.html
+https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html
 
 https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html 
 
