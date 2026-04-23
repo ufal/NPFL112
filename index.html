@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -3472,6 +3506,86 @@ Assignment : 8 Deadline: April 30
 </section>
 <section id="activities-8" class="level3">
 <h3 class="anchored" data-anchor-id="activities-8">Activities</h3>
+<p>You can try and download this file: <a href="https://api.fbi.gov/@wanted" class="uri">https://api.fbi.gov/\@wanted</a> into a folder where you have writing permissions. Call the file whatever you want. The correct suffix is <code>.json</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>my_destination_file <span class="ot">&lt;-</span> <span class="st">&quot;~/DATA.NPFL112/2026-FBI-wanted.json&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">download.file</span>(<span class="at">url =</span> <span class="st">&quot;https://api.fbi.gov/@wanted&quot;</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">destfile =</span> my_destination_file, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mode =</span> <span class="st">&quot;wb&quot;</span>) </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Use wb with Excel files on Windows, here not necessary</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>fbi_simple_list <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(my_destination_file, </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyDataFrame =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyMatrix =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyVector =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">flatten =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># with complex structures, explore calling arguments of str() to display just a little</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(fbi_simple_list, <span class="at">max.level =</span> <span class="dv">2</span>, <span class="at">vec.len =</span> <span class="dv">0</span>, <span class="at">list.len =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 3
+ $ total: int NULL ...
+ $ page : int NULL ...
+ $ items:&#39;data.frame&#39;:  20 obs. of  43 variables:
+  ..$ pathId                : chr [1:20]  ...
+  ..$ uid                   : chr [1:20]  ...
+  ..$ title                 : chr [1:20]  ...
+  ..$ description           : chr [1:20]  ...
+  ..$ images                :List of 20
+  ..$ files                 :List of 20
+  ..$ warning_message       : chr [1:20]  ...
+  ..$ remarks               : chr [1:20]  ...
+  ..$ details               : chr [1:20]  ...
+  ..$ additional_information: logi [1:20] NULL ...
+  .. [list output truncated]</code></pre>
+</div>
+</div>
+<p>How many wanted persons are there in the <code>items</code> data frame? You can tell from the <code>str</code> output above.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fbi_complex_list <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">fromJSON</span>(my_destination_file, </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyVector =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyMatrix =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyDataFrame =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">flatten =</span> <span class="cn">FALSE</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(fbi_complex_list, <span class="at">max.level =</span> <span class="dv">3</span>, <span class="at">vec.len =</span> <span class="dv">1</span>, <span class="at">list.len =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 3
+ $ total: int 1157
+ $ page : int 1
+ $ items:List of 20
+  ..$ :List of 43
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/04d4aee30d154f21ae53948f4be7b52b&quot;
+  .. ..$ uid                   : chr &quot;04d4aee30d154f21ae53948f4be7b52b&quot;
+  .. ..$ title                 : chr &quot;CASINO ROBBERY - NEW MEXICO&quot;
+  .. ..$ description           : chr &quot;Unknown Suspect\r\nAlbuquerque, New Mexico\r\nJuly 1, 2022&quot;
+  .. .. [list output truncated]
+  ..$ :List of 43
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/6d4795c3c203428bb48ed1f0ce2477c3&quot;
+  .. ..$ uid                   : chr &quot;6d4795c3c203428bb48ed1f0ce2477c3&quot;
+  .. ..$ title                 : chr &quot;RAMIL VENTURA PALAFOX&quot;
+  .. ..$ description           : chr &quot;Failure to Appear (Wire Fraud; Concealment Money Laundering)&quot;
+  .. .. [list output truncated]
+  ..$ :List of 43
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/11f93b91a98e43de828a9f6be58a8390&quot;
+  .. ..$ uid                   : chr &quot;11f93b91a98e43de828a9f6be58a8390&quot;
+  .. ..$ title                 : chr &quot;ALIZA SPENCER&quot;
+  .. ..$ description           : chr &quot;Murder Victim\r\nBinghamton, New York\r\nApril 21, 2022&quot;
+  .. .. [list output truncated]
+  ..$ :List of 43
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/f05cba69aa3244b6ad1b57d232cd5160&quot;
+  .. ..$ uid                   : chr &quot;f05cba69aa3244b6ad1b57d232cd5160&quot;
+  .. ..$ title                 : chr &quot;KASHAWN NICOLA ROPER&quot;
+  .. ..$ description           : chr &quot;Unlawful Flight to Avoid Prosecution - Second Degree Murder, Armed Criminal Action, Unlawful Use of a Weapon&quot;
+  .. .. [list output truncated]
+  .. [list output truncated]</code></pre>
+</div>
+</div>
 </section>
 <section id="assignments-7" class="level3">
 <h3 class="anchored" data-anchor-id="assignments-7">Assignments</h3>
@@ -3542,12 +3656,63 @@ Assignment : 10 Deadline: –
 <h2 class="anchored" data-anchor-id="may-15">10. May 15</h2>
 <section id="goals-9" class="level3">
 <h3 class="anchored" data-anchor-id="goals-9">Goals</h3>
+<ul>
+<li><p>ways to iterate over an object (mostly a list)</p>
+<ul>
+<li><p><code>for</code> loop</p></li>
+<li><p><code>purrr::map</code></p></li>
+</ul></li>
+</ul>
 </section>
 <section id="presentations-8" class="level3">
 <h3 class="anchored" data-anchor-id="presentations-8">Presentations</h3>
 </section>
 <section id="activities-9" class="level3">
 <h3 class="anchored" data-anchor-id="activities-9">Activities</h3>
+<p>When you don’t know better, use a classic loop. Train on the FBI example from April 24.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fbi_simple_list <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">&quot;~/DATA.NPFL112/2026-FBI-wanted.json&quot;</span>, </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyVector =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You want to bind the data frames by rows (<code>dplyr::bind_rows</code>).<br>
+First create an empty data frame.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>items_df <span class="ot">&lt;-</span> <span class="fu">tibble</span>()</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(items_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [0 × 0] (S3: tbl_df/tbl/data.frame)
+ Named list()</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_along</span>(fbi_simple_list<span class="sc">$</span>items)){</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  items_df <span class="ot">&lt;-</span> items_df <span class="sc">%&gt;%</span> <span class="fu">bind_rows</span>(fbi_simple_list<span class="sc">$</span>items[i])</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(items_df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 860</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(items_df) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] &quot;pathId&quot;                 &quot;uid&quot;                    &quot;title&quot;                 
+ [4] &quot;description&quot;            &quot;images&quot;                 &quot;files&quot;                 
+ [7] &quot;warning_message&quot;        &quot;remarks&quot;                &quot;details&quot;               
+[10] &quot;additional_information&quot; &quot;caution&quot;                &quot;reward_text&quot;           
+[13] &quot;reward_min&quot;             &quot;reward_max&quot;             &quot;dates_of_birth_used&quot;   
+[16] &quot;place_of_birth&quot;         &quot;locations&quot;              &quot;field_offices&quot;         
+[19] &quot;legat_names&quot;            &quot;status&quot;                 &quot;person_classification&quot; 
+[22] &quot;poster_classification&quot;  &quot;ncic&quot;                   &quot;age_min&quot;               
+[25] &quot;age_max&quot;                &quot;weight_min&quot;             &quot;weight_max&quot;            
+[28] &quot;height_min&quot;             &quot;height_max&quot;             &quot;eyes&quot;                  
+[31] &quot;hair&quot;                   &quot;build&quot;                  &quot;sex&quot;                   
+[34] &quot;race&quot;                   &quot;nationality&quot;            &quot;scars_and_marks&quot;       
+[37] &quot;complexion&quot;             &quot;occupations&quot;            &quot;possible_countries&quot;    
+[40] &quot;possible_states&quot;        &quot;modified&quot;               &quot;publication&quot;           
+[43] &quot;path&quot;                  </code></pre>
+</div>
+</div>
 </section>
 </section>
 
