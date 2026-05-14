@@ -3087,7 +3087,7 @@ YOUR MAIN RESOURCES
 </section>
 <section id="presentations" class="level3">
 <h3 class="anchored" data-anchor-id="presentations">Presentations</h3>
-<p><a href="https://ufal.github.io/NPFL112/01_Introduction.html" class="url" title="https://ufal.github.io/NPFL112/slides/01_Introduction.html">https://ufal.github.io/NPFL112/slides/01_Introduction.html</a> <a href="https://ufal.github.io/NPFL112/slides/slides_html/01_Introduction.html" title="https://ufal.github.io/NPFL112/slides/slides_html/01_Introduction.html">static html</a> <a href="https://ufal.github.io/NPFL112/slides/slides_pdf/01_Introduction.html" title="https://ufal.github.io/NPFL112/slides/slides_pdf/01_Introduction.html">pdf</a></p>
+<p><a href="https://ufal.github.io/NPFL112/01_Introduction.html" class="url" title="https://ufal.github.io/NPFL112/slides/01_Introduction.html">https://ufal.github.io/NPFL112/slides/01_Introduction.html</a> <a href="https://ufal.github.io/NPFL112/slides/slides_html/01_Introduction.html" title="https://ufal.github.io/NPFL112/slides_html/01_Introduction.html">static html</a> <a href="https://ufal.github.io/NPFL112/slides/slides_pdf/01_Introduction.html" title="https://ufal.github.io/NPFL112/slides_pdf/01_Introduction.html">pdf</a></p>
 <p><a href="https://ufal.github.io/NPFL112/02_HowToRStudio.html" class="url" title="https://ufal.github.io/NPFL112/slides/02_HowToRStudio.html">https://ufal.github.io/NPFL112/slides/02_HowToRStudio.html</a></p>
 </section>
 <section id="activities" class="level3">
@@ -3540,7 +3540,7 @@ Assignment : 8 Deadline: April 30
   ..$ warning_message       : chr [1:20]  ...
   ..$ remarks               : chr [1:20]  ...
   ..$ details               : chr [1:20]  ...
-  ..$ additional_information: logi [1:20] NULL ...
+  ..$ additional_information: chr [1:20]  ...
   .. [list output truncated]</code></pre>
 </div>
 </div>
@@ -3556,32 +3556,32 @@ Assignment : 8 Deadline: April 30
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(fbi_complex_list, <span class="at">max.level =</span> <span class="dv">3</span>, <span class="at">vec.len =</span> <span class="dv">1</span>, <span class="at">list.len =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 3
- $ total: int 1157
+ $ total: int 1161
  $ page : int 1
  $ items:List of 20
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/04d4aee30d154f21ae53948f4be7b52b&quot;
-  .. ..$ uid                   : chr &quot;04d4aee30d154f21ae53948f4be7b52b&quot;
-  .. ..$ title                 : chr &quot;CASINO ROBBERY - NEW MEXICO&quot;
-  .. ..$ description           : chr &quot;Unknown Suspect\r\nAlbuquerque, New Mexico\r\nJuly 1, 2022&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/8047423326854f4082604c1111320665&quot;
+  .. ..$ uid                   : chr &quot;8047423326854f4082604c1111320665&quot;
+  .. ..$ title                 : chr &quot;JANE DOE - MEDFORD, NEW YORK&quot;
+  .. ..$ description           : chr &quot;Medford, New York\r\nDecember 7, 1994&quot;
   .. .. [list output truncated]
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/6d4795c3c203428bb48ed1f0ce2477c3&quot;
-  .. ..$ uid                   : chr &quot;6d4795c3c203428bb48ed1f0ce2477c3&quot;
-  .. ..$ title                 : chr &quot;RAMIL VENTURA PALAFOX&quot;
-  .. ..$ description           : chr &quot;Failure to Appear (Wire Fraud; Concealment Money Laundering)&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/2e3067a9450449cb80b783a64a43f78f&quot;
+  .. ..$ uid                   : chr &quot;2e3067a9450449cb80b783a64a43f78f&quot;
+  .. ..$ title                 : chr &quot;ROLAND PLAINFEATHER&quot;
+  .. ..$ description           : chr &quot;April 19, 2026\r\nPryor, Montana&quot;
   .. .. [list output truncated]
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/11f93b91a98e43de828a9f6be58a8390&quot;
-  .. ..$ uid                   : chr &quot;11f93b91a98e43de828a9f6be58a8390&quot;
-  .. ..$ title                 : chr &quot;ALIZA SPENCER&quot;
-  .. ..$ description           : chr &quot;Murder Victim\r\nBinghamton, New York\r\nApril 21, 2022&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/f2f247224152479483519098b56ade7f&quot;
+  .. ..$ uid                   : chr &quot;f2f247224152479483519098b56ade7f&quot;
+  .. ..$ title                 : chr &quot;BOB TANG&quot;
+  .. ..$ description           : chr &quot;Unlawful Flight to Avoid Prosecution - Murder&quot;
   .. .. [list output truncated]
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/f05cba69aa3244b6ad1b57d232cd5160&quot;
-  .. ..$ uid                   : chr &quot;f05cba69aa3244b6ad1b57d232cd5160&quot;
-  .. ..$ title                 : chr &quot;KASHAWN NICOLA ROPER&quot;
-  .. ..$ description           : chr &quot;Unlawful Flight to Avoid Prosecution - Second Degree Murder, Armed Criminal Action, Unlawful Use of a Weapon&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/b8d1ffebc82a4a76b915c338a1a0c4cc&quot;
+  .. ..$ uid                   : chr &quot;b8d1ffebc82a4a76b915c338a1a0c4cc&quot;
+  .. ..$ title                 : chr &quot;RICKY VARGAS&quot;
+  .. ..$ description           : chr &quot;Unlawful Flight to Avoid Prosecution - First Degree Murder, Causing Serious Bodily Injury and Leaving the Scene&quot;| __truncated__
   .. .. [list output truncated]
   .. [list output truncated]</code></pre>
 </div>
