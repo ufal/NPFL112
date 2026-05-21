@@ -3556,32 +3556,32 @@ Assignment : 8 Deadline: April 30
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(fbi_complex_list, <span class="at">max.level =</span> <span class="dv">3</span>, <span class="at">vec.len =</span> <span class="dv">1</span>, <span class="at">list.len =</span> <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 3
- $ total: int 1161
+ $ total: int 1169
  $ page : int 1
  $ items:List of 20
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/8047423326854f4082604c1111320665&quot;
-  .. ..$ uid                   : chr &quot;8047423326854f4082604c1111320665&quot;
-  .. ..$ title                 : chr &quot;JANE DOE - MEDFORD, NEW YORK&quot;
-  .. ..$ description           : chr &quot;Medford, New York\r\nDecember 7, 1994&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/c5a312f71a3d4a8995888bbc9b279236&quot;
+  .. ..$ uid                   : chr &quot;c5a312f71a3d4a8995888bbc9b279236&quot;
+  .. ..$ title                 : chr &quot;ROBINSON ANDRES CAMACHO-RODRIGUEZ&quot;
+  .. ..$ description           : chr &quot;Conspiracy to Commit Interstate Transportation, Transmittal, or Transfer of Stolen Property&quot;
   .. .. [list output truncated]
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/2e3067a9450449cb80b783a64a43f78f&quot;
-  .. ..$ uid                   : chr &quot;2e3067a9450449cb80b783a64a43f78f&quot;
-  .. ..$ title                 : chr &quot;ROLAND PLAINFEATHER&quot;
-  .. ..$ description           : chr &quot;April 19, 2026\r\nPryor, Montana&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/8e6090152d6640929912f934a8611f5b&quot;
+  .. ..$ uid                   : chr &quot;8e6090152d6640929912f934a8611f5b&quot;
+  .. ..$ title                 : chr &quot;JHON ALEXANDER QUINTERO-CADENA&quot;
+  .. ..$ description           : chr &quot;Conspiracy to Commit Interstate Transportation, Transmittal, or Transfer of Stolen Property&quot;
   .. .. [list output truncated]
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/f2f247224152479483519098b56ade7f&quot;
-  .. ..$ uid                   : chr &quot;f2f247224152479483519098b56ade7f&quot;
-  .. ..$ title                 : chr &quot;BOB TANG&quot;
-  .. ..$ description           : chr &quot;Unlawful Flight to Avoid Prosecution - Murder&quot;
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/a7878502656446b8bc479b6347f0fe09&quot;
+  .. ..$ uid                   : chr &quot;a7878502656446b8bc479b6347f0fe09&quot;
+  .. ..$ title                 : chr &quot;JESSON QUINTERO&quot;
+  .. ..$ description           : chr &quot;Conspiracy to Commit Interstate Transportation, Transmittal, or Transfer of Stolen Property&quot;
   .. .. [list output truncated]
   ..$ :List of 43
-  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/b8d1ffebc82a4a76b915c338a1a0c4cc&quot;
-  .. ..$ uid                   : chr &quot;b8d1ffebc82a4a76b915c338a1a0c4cc&quot;
-  .. ..$ title                 : chr &quot;RICKY VARGAS&quot;
-  .. ..$ description           : chr &quot;Unlawful Flight to Avoid Prosecution - First Degree Murder, Causing Serious Bodily Injury and Leaving the Scene&quot;| __truncated__
+  .. ..$ pathId                : chr &quot;https://api.fbi.gov/@wanted-person/ff91fb2cc2594920ab8409261951e3d7&quot;
+  .. ..$ uid                   : chr &quot;ff91fb2cc2594920ab8409261951e3d7&quot;
+  .. ..$ title                 : chr &quot;NAVY YARD ASSAULT&quot;
+  .. ..$ description           : chr &quot;Unknown Suspects\r\nWashington, D.C.\r\nMay 16, 2026&quot;
   .. .. [list output truncated]
   .. [list output truncated]</code></pre>
 </div>
@@ -3666,10 +3666,12 @@ Assignment : 10 Deadline: –
 </section>
 <section id="presentations-8" class="level3">
 <h3 class="anchored" data-anchor-id="presentations-8">Presentations</h3>
+<p>No presentation</p>
 </section>
 <section id="activities-9" class="level3">
 <h3 class="anchored" data-anchor-id="activities-9">Activities</h3>
-<p>When you don’t know better, use a classic loop. Train on the FBI example from April 24.</p>
+<p>We were training the <code>map</code> function in the context of harvesting the entire FBI Wanted database page by page, extracting the items (the individual records) and bind them into a single data frame. Here is the script we created: <a href="https://ufal.github.io/FBI_extrakce.R" title="https://ufal.github.io/FBI_extrakce.R">https://ufal.github.io/FBI_extrakce.R</a></p>
+<p>When you don’t know better, use a classic loop. Train on the FBI example from April 24 like this:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fbi_simple_list <span class="ot">&lt;-</span> jsonlite<span class="sc">::</span><span class="fu">read_json</span>(<span class="st">&quot;~/DATA.NPFL112/2026-FBI-wanted.json&quot;</span>, </span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">simplifyVector =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3713,6 +3715,21 @@ First create an empty data frame.</p>
 [43] &quot;path&quot;                  </code></pre>
 </div>
 </div>
+</section>
+</section>
+<section id="may-21---last-lecture" class="level2">
+<h2 class="anchored" data-anchor-id="may-21---last-lecture">May 21 - last lecture</h2>
+<section id="goals-10" class="level3">
+<h3 class="anchored" data-anchor-id="goals-10">Goals</h3>
+<p>a first glance of interpreting a linear regression model</p>
+</section>
+<section id="presentations-9" class="level3">
+<h3 class="anchored" data-anchor-id="presentations-9">Presentations</h3>
+<p><a href="https://ufal.github.io/NPFL112/18_LinearRegression.html" class="url" title="https://ufal.github.io/NPFL112/18_LinearRegression.html">https://ufal.github.io/NPFL112/18_LinearRegression.html</a> <a href="https://ufal.github.io/NPFL112/slides_html/18_LinearRegression.html" title="https://ufal.github.io/NPFL112/slides_html/18_LinearRegression.html">static html</a> <a href="https://ufal.github.io/NPFL112/slides_pdf/18_LinearRegression.pdf" title="https://ufal.github.io/NPFL112/slides_pdf/18_LinearRegression.html">pdf</a></p>
+</section>
+<section id="activities-10" class="level3">
+<h3 class="anchored" data-anchor-id="activities-10">Activities</h3>
+<p>Wrap-up chat</p>
 </section>
 </section>
 
