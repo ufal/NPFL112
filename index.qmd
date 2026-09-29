@@ -1,0 +1,560 @@
+---
+title: "Winter term 2026 NPFL112"
+format: 
+  pdf: 
+    self-contained: true
+    shift-heading-level-by: -1
+    toc: false
+  html:
+    self-contained: true
+    embed-resources: true
+    output-ext: html
+    output-file: index
+editor: visual
+---
+
+::: callout-important
+## YOUR MAIN RESOURCES
+
+-   RStudio on Jupyter lab: <https://aic.ufal.mff.cuni.cz/jlab/>
+
+-   DataCamp: <https://www.datacamp.com/users/sign_in>
+
+    -   Starting Sept 29, 2026, you have premium access for six months (i.e. until Feb 28, 2027). Then your account falls back to the free tier.
+
+-   This website: <https://ufal.github.io/NPFL112/>
+
+-   We often work with data from [Gapminder.org](https://www.gapminder.org/ "https://www.gapminder.org/"){.url}, particularly this GitHub repository: [https://github.com/open-numbers/ddf\--gapminder\--systema_globalis](https://github.com/open-numbers/ddf--gapminder--systema_globalis "https://github.com/open-numbers/ddf--gapminder--systema_globalis"){.url}
+:::
+
+## Lecture 1.
+Date: 2026-10-02
+
+### Goals
+
+<!-- -   access computer network in the lab (save your credentials) -->
+-   access the Jupyter Hub RStudio (save your credentials)
+-   access DataCamp (create your account with the same e-mail address with which you enrolled)
+-   Overview of
+    -   the course scope
+    -   grading requirements
+-   Know where to find presentations online:
+    <!-- -   https://github.com/ufal/NPFL112?tab=readme-ov-file or -->
+    - https://ufal.github.io/NPFL112/
+    -   Press **s** to display speaker view with ample fluent notes
+-   Know how to download presentations in other formats (pdf, html pages) from RStudio on Jupyter Hub
+    -   `SCRIPTS.NPFL112/pages`
+    -   `SCRIPTS.NPFL112/pdf`
+
+### Presentations
+
+[https://ufal.github.io/NPFL112/slides/01_Introduction.html](https://ufal.github.io/NPFL112/01_Introduction.html "https://ufal.github.io/NPFL112/slides/01_Introduction.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/01_Introduction.html "https://ufal.github.io/NPFL112/slides_html/01_Introduction.html"){.url} [pdf](https://ufal.github.io/NPFL112/slides_pdf/01_Introduction.pdf "https://ufal.github.io/NPFL112/slides_pdf/01_Introduction.pdf"){.url}
+
+[https://ufal.github.io/NPFL112/slides/02_HowToRStudio.html](https://ufal.github.io/NPFL112/02_HowToRStudio.html "https://ufal.github.io/NPFL112/slides/02_HowToRStudio.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/02_HowToRStudio.html "https://ufal.github.io/NPFL112/slides_html/02_HowToRStudio.html"){.url} [pdf](https://ufal.github.io/NPFL112/slides_pdf/02_HowToRStudio.pdf "https://ufal.github.io/NPFL112/slides_pdf/02_HowToRStudio.pdf"){.url}
+
+### Activities
+
+#### In R Studio
+
+1.  Log in at RStudio
+
+2.  In the Files tab (right bottom pane), create a new directory (folder) and call it - exactly! - `SUBMISSIONS.NPFL112` .
+
+3.  Explore the folders `SCRIPTS.NPFL112` , `DATA.NPFL112`
+
+4.  Local download example: Download to your computer `~/SCRIPTS.NPFL112/slides/slides_pdf/04_NavigatingRStudioForProgramming.pdf`.
+
+5.  Log in at [https://www.datacamp.com/users/sign_in](https://www.datacamp.com/users/sign_in){.url} (you should have received an invite from the DataCamp system Feb 19, around 9:30 PM). Sign up with the same e-mail address with which you have enrolled this course. If there is time left, start with your first home assignment.
+
+### Assignments
+
+::: callout-caution
+## Assignment 1: Deadline: Thu Feb 26, 9:00 AM
+
+In RStudio, make sure that you have created your folder called `SUBMISSIONS.NPFL112`.
+
+Open the folder `HOMEWORK_ASSIGNMENTS`. Select (tick) the file `HW_001.R` and copy it into your `SUBMISSIONS.NPFL112` folder.
+
+Open this file, read the instructions and proceed accordingly. Go through the entire file but do not spend more than 30 minutes with it. If you use AI, only adopt responses that you have fully understood. The goal is to make you *notice, learn,* *and internalize* something - or make your initial self-assessment.
+:::
+
+::: callout-caution
+## Assignment 2: Deadline: 
+
+<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1>
+:::
+
+------------------------------------------------------------------------
+
+## Lecture 2. 
+Date: 2026-10-09
+
+### Goals
+
+1.  Internalize the following concepts:
+
+    1.  Data types/classes (numeric, character, boolean)
+
+    2.  Data type coercion (what happens to your numeric vector when you blend in a non-digit, etc. )
+
+    3.  Data structures (vectors, data frames/tibbles)
+
+    4.  Functions and their arguments
+
+    5.  Working directory
+
+2.  Learn to invoke and read the built-in R Help
+
+3.  Open a Quarto (.qmd) file and run code chunks manually
+
+### Presentations
+
+[https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html](https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html "https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/04_NavigatingRStudioForProgramming.html "https://ufal.github.io/NPFL112/slides_html/04_NavigatingRStudioForProgramming.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/04_NavigatingRStudioForProgramming.pdf "https://ufal.github.io/NPFL112/slides_pdf/04_NavigatingRStudioForProgramming.pdf")
+
+[https://ufal.github.io/NPFL112/05_VariablesFunctions.html](https://ufal.github.io/NPFL112/05_VariablesFunctions.html "https://ufal.github.io/NPFL112/05_VariablesFunctions.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/05_VariablesFunctions.html "https://ufal.github.io/NPFL112/slides_html/05_VariablesFunctions.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/05_VariablesFunctions.pdf "https://ufal.github.io/NPFL112/slides_pdf/05_VariablesFunctions.pdf")
+
+<https://ufal.github.io/NPFL112/06_WorkingDirectory.html> [static html](https://ufal.github.io/NPFL112/slides_html/06_WorkingDirectory.html "https://ufal.github.io/NPFL112/slides_html/06_WorkingDirectory.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/06_WorkingDirectory.pdf "https://ufal.github.io/NPFL112/slides_pdf/06_WorkingDirectory.pdf")
+
+### Activities
+
+1.  Lecture start: group work, exchange about `HW_001.R`: During your homework, which structures/patterns caught your eye?
+2.  Hands-on together: Copy the file `SCRIPTS.NPFL112/05_VariablesFunctions.qmd` to your home directory.
+    1.  Open it and run (execute) all code chunks. Watch what happens.
+    2.  When you are done with executing the chunks, find the "Render" button. Explore the rendering options. Render the file as an html file. It will appear in the same directory where you had the corresponding `qmd` file and will inherit its name. Open the resulting html file in a web browser.
+    3.  Open a new Quarto `.qmd` file. Render it by hitting the Render button.
+
+### Assignments
+
+::: callout-caution
+## Assignment 3. Deadline: Fri Mar 6, 9:00 (always entire chapters!)
+
+<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-2-vectors-2?ex=1>
+
+<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-5-data-frames?ex=1>
+
+<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-4-factors-4?ex=1>
+:::
+
+------------------------------------------------------------------------
+
+## Lecture 3. 
+Date: 2026-10-16
+
+### Goals
+
+1.  Internalize the following concepts:
+    1.  Vector recycling
+    2.  Vector element vs. vector position index
+    3.  logical operators (`>`,`<`, `>=`, `<=`, `!=`, `==`, `&`, `|`)
+2.  Know how to:
+    1.  Extract elements from a vector (by position or by a condition expressed by a logical operator).
+    2.  Extract values from data frames by rows and columns in base R.
+    3.  Read a tabular file (`.csv`) into a data frame object.
+    4.  Write a data frame object into a tabular file (`.csv`)
+3.  Recognize transformations of tabular data (no coding): filtering rows, selecting columns, aggregations, aggregations in groups
+
+### Presentations
+
+Finish <https://ufal.github.io/NPFL112/05_VariablesFunctions.html> (from slide *No Coercion with errors*).
+
+::: callout-note
+## Activity to new topic
+
+table transformations, see below
+:::
+
+<https://ufal.github.io/NPFL112/07_Exploring_dataframes.html> [static html](https://ufal.github.io/NPFL112/slides_html/07_Exploring_dataframes.html "https://ufal.github.io/NPFL112/slides_html/07_Exploring_dataframes.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/07_Exploring_dataframes.pdf "https://ufal.github.io/NPFL112/slides_pdf/07_Exploring_dataframes.pdf")
+
+### Activities
+
+Look at the (printed) tables and keep them ready at your hands. The tables are bits of `gapminder` data, also file `clips_handouts.pdf` in `SCRIPTS.NPFL112` and <https://ufal.github.io/NPFL112/clips_handouts.pdf>. Each sheet contains a pair of tables. What do you need to do to the table on the left to obtain the table you see to the right? Try your luck in a multiple choice test here: <https://quest.ms.mff.cuni.cz/class-quiz/quiz/NPFL112_02_01_clips>
+
+and check out whether you can describe most of the transformations - in your own words, no scientific jargon, no coding. Note the difficult ones and ask about them after the exercise. Duration: 10 - 15 minutes.
+
+### Assignments
+
+::: callout-caution
+
+## DH-Certificate Assignment No 1, deadline Thu Oct 22, 16:00
+
+In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work. Render it as html. 
+
+## Assignment 4: Deadline: Fri Mar 20
+
+<https://app.datacamp.com/learn/courses/introduction-to-the-tidyverse?cf-exp=comm--ai-native-cdp-layout%3Aon>
+:::
+
+------------------------------------------------------------------------
+
+## Lecture 4
+
+Date: 2026-10-23
+
+### Goals
+
+-   Understand these `ggplot2` concepts:
+
+    -   Aesthetic scales and their mapping to variables
+
+    -   Mapping inheritance (where to write the aesthetic mappings)
+
+    -   *Geom/geometry* in `ggplot2`.
+
+-   Learn about the `ggplot2` cheatsheet: [https://rstudio.github.io/cheatsheets/data-visualization.pdf](https://rstudio.github.io/cheatsheets/data-visualization.pdf "https://rstudio.github.io/cheatsheets/data-visualization.pdf"){.url} (also in RStudio Help!)
+
+### Presentations
+
+<https://ufal.github.io/NPFL112/08_DiversePlots.html> [static html](https://ufal.github.io/NPFL112/slides_html/08_DiversePlots.html "https://ufal.github.io/NPFL112/slides_html/08_DiversePlots.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/08_DiversePlots.pdf "https://ufal.github.io/NPFL112/slides_pdf/08_DiversePlots.pdf")
+
+### Activities
+
+Mentimeter WarmUp: [https://www.menti.com/](https://www.menti.com/ "https://www.menti.com/"){.url}
+
+Teacher's GUI: [https://www.mentimeter.com](https://www.mentimeter.com "https://www.mentimeter.com"){.url}, presentation *Dplyr and ggplot2 for beginners.* Needs login and the presentation must be launched.
+
+#### Your first data report in Quarto: tracking the world's billionaires
+
+1.  Open a new Quarto (`.qmd)` file (a Document, but Presentation would be fine, too).
+
+2.  In the dialog window, give the document the title "Billionaires Investigation" and fill out your name.
+
+3.  Save the file into `SUBMISSIONS.NPFL112` under the name `my_first_data_report`.
+
+4.  Check out the YAML header. Add today's date to it with this line: `date: today`
+
+5.  Hit the **Render** button (top of the pane). If you did it correctly, RStudio's bottom right pane expands with the **Viewer** tab fronted, showing your rendered html file. Switch to the **Files** tab and find the resulting html file that **Viewer** is showing you. Can you see the date, too?
+
+6.  Get back in the top-left pane and start editing your Quarto document. Have a look at the template in both the **Source** and the **Visual** editor mode (toggle these options in the top left corner). Particularly inspect the Running Code section and hit the green arrow/triangle to run the code inside. Once you have read the text in the template, you can erase it.
+
+7.  Insert a code chunk with `Ctrl + Alt + i` or with the green `+C` button in the top right corner of your pane.
+
+8.  ::: {#callout-inside-this}
+    Type into the chunk the code to mount/activate the necessary libraries `dplyr` , `readr`, and `ggplot2`.
+
+    ::: callout-tip
+    ## Call all *tidyverse* libraries simultaneously
+
+    You can as well load all tidyverse libraries simultaneously by calling `library(tidyverse)`.
+    :::
+    :::
+
+9.  ::: {#callout-inside-here-2}
+    In the same chunk, create a variable called `df` (to remember that it is a "data frame") by reading in the file with the following path: `~/DATA.NPFL112/billionnaires_combined.tsv` . It is a `.tsv` file (tab-separate values), so you need the `read_tsv` function from the `readr` library.
+
+    ::: callout-tip
+    ## Understand the file-reading functions of the `readr` library
+
+    There are dedicated functions for specific formats, such as the U.S. `.csv`, the European `.csv`, and `.tsv`. All these formats capture tables in plain text by a convention of separating columns with a specific delimiter character (comma, semicolon, or tabulator). They all are derived from the `read_delim` function. You can try it out with this very file. Mind to set the delimiter argument to tabulator. Check out the other arguments of these functions in their documentation!
+    :::
+    :::
+
+10. Explore the data frame `df`. Create another code chunk and print first ten rows of this data frame.
+
+11. Overwrite `df` so that it will only contain data from the year 2022.
+
+12. Create yet another code chunk. In this code chunk, write the code to print a histogram of the wealth distribution among the billionaires (column `daily_income`). Experiment with the `binwidth` argument of `geom_histogram`.
+
+13. Now create a new code chunk that prints a scatterplot with `age` on the x-axis and `daily_income` on the y-axis. Can you observe any relation between age and daily income? E.g. do senior billionaires appear to earn more per day than the younger ones?
+
+14. Above each chunk with a plot add a heading formatted as Heading 2 and a short text describing for your audience what the given plot demonstrates.
+
+15. Render your document without changing anything in the YAML header.
+
+16. Now replace *html* with *pdf* in the YAML header and hit the Render button again. If you get an error message, install a package called `tinytex` and try again without explicitly calling/mounting/activating it. RStudio ought to do it by itself. If you do not get a pdf file, give up. Make a note about this failure in your file and re-render it as html. That always works.
+
+### Assignments
+
+::: callout-caution
+## Assignment 5: Deadline: Mar 27
+
+Finish the billionaires exercise from this lecture and place it into your `SUBMISSIONS.NPFL112` folder.
+:::
+
+::: callout-caution
+## Assignment 6: Deadline: April 8, noon
+
+Do [this exercise](https://ufal.github.io/NPFL112/HW02.html "https://ufal.github.io/NPFL112/HW02.html") and place the resulting file (R or .qmd from a Quarto file) into your `SUBMISSIONS.NPFL112` folder. If you produce a `.qmd` file (you are encouraged to!), please also add a rendered file (html or pdf).
+:::
+
+## Lecture 5
+Date: 2026-10-30
+
+### Goals
+
+Wrap up operations on a single table with `dplyr`.
+
+### Presentations
+
+[https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html](https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html "https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/09_Aggregations_with_dplyr.html "https://ufal.github.io/NPFL112/slides_html/09_Aggregations_with_dplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/09_Aggregations_with_dplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/09_Aggregations_with_dplyr.pdf")
+
+[https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html](https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html){.url} [static html](https://ufal.github.io/NPFL112/slides_html/11_Computations_mutate_with_dplyr.html "https://ufal.github.io/NPFL112/slides_html/11_Computations_mutate_with_dplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/11_Computations_mutate_with_dplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/11_Computations_mutate_with_dplyr.pdf")
+
+### Activities
+
+Look again at the [worksheets with data frames](https://ufal.github.io/NPFL112/clips_handouts.pdf "https://ufal.github.io/NPFL112/clips_handouts.pdf"). Do not take them out of their plastic sleeves. From the label sheet, pick for each data frame sheet a label that encodes the transformation of the left table into the right table.
+
+### Assignments
+
+::: callout-caution
+## Assignment 6: Deadline: Mar 27
+
+<https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-ggplot2?cf-exp=comm--ai-native-cdp-layout%3Aon>
+:::
+
+## Lecture 6
+
+Date: 2026-11-06
+
+-   train reading a foreign code - recall and apply the bits familiar to you, infer the meaning of new elements from the context
+
+### Activities
+
+Group work on paper: interpret someone elses' code in greatest possible detail. Hazard guesses! The code has one issue in it. Will you find it? Compare your results with other groups. In-person lecture: code in hardcopy. Here is a [link to the code in pdf](https://ufal.github.io/NPFL112/T_05_01_01.pdf "https://ufal.github.io/NPFL112/T_05_01_01.pdf").
+
+Here is the [clue to the exercise](https://ufal.github.io/NPFL112/T05_BillionairesBrokenDown.html "https://ufal.github.io/NPFL112/T05_BillionairesBrokenDown.html"){.url} - the code broken down into meaningful chunks and explained. [static html](https://ufal.github.io/NPFL112/slides_html/T05_BillionairesBrokenDown.html) [pdf](https://ufal.github.io/NPFL112/slides_pdf/T05_BillionairesBrokenDown.pdf "https://ufal.github.io/NPFL112/slides_pdf/T05_BillionairesBrokenDown.pdf")
+
+
+## Lecture 7
+Date: 2026-11-13
+
+Deadline for HW02 was April 8, noon.
+
+### Goals
+
+-   Internalize the concept of relational database
+
+    -   primary key, secondary key
+
+    -   one-to-one, one-to-many...
+
+    -   item pointing to itself
+
+-   `dplyr` : *join* dataframes on a pair of columns
+
+    -   inner join vs. left/right join vs. full join
+
+    -   semi join, anti join
+
+### Presentations
+
+[https://ufal.github.io/NPFL112/12_JoiningDplyr.html](https://ufal.github.io/NPFL112/12_JoiningDplyr.html "https://ufal.github.io/NPFL112/12_JoiningDplyr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/12_JoiningDplyr.html "https://ufal.github.io/NPFL112/slides_html/12_JoiningDplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/12_JoiningDplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/12_JoiningDplyr.pdf")
+
+### Activities
+
+### Assignments
+
+::: callout-caution
+## Assignment : 7 Deadline: April 23
+
+<https://app.datacamp.com/learn/courses/joining-data-with-dplyr?cf-exp=comm--ai-native-cdp-layout%3Aon>
+:::
+
+## Lecture 8
+Date: 2026-11-20
+
+### Goals
+
+-   string search with `stringr` - just enough to understand why it is relevant when restructuring data frames with `tidyr`
+
+    -   identify just the first match, all matches
+
+    -   detect/count/match/extract/replace
+
+    -   regular expressions: any character, interval, groups (a few random features, you will have to learn regular expressions separately)
+
+-   get to know the `tidyr` library
+
+-   tidy data - longer vs. wider format
+
+    -   `pivot_longer`, `pivot_wider`
+
+-   separate or unite columns based on substrings in their values
+
+-   separate rows
+
+### Presentations
+
+[https://ufal.github.io/NPFL112/15_tidyr_stringr.html](https://ufal.github.io/NPFL112/15_tidyr_stringr.html "https://ufal.github.io/NPFL112/15_tidyr_stringr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/15_tidyr_stringr.html "https://ufal.github.io/NPFL112/slides_html/15_tidyr_stringr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/15_tidyr_stringr.pdf "https://ufal.github.io/NPFL112/slides_pdf/15_tidyr_stringr.html")
+
+### Activities
+
+Self-paced exploration of operations on strings with `stringr` on Mentimeter <https://www.menti.com/alwuzuf2md8h> (expires Apr 18)
+
+### Assignments
+
+::: callout-caution
+## Assignment : 8 Deadline: April 30
+
+<https://app.datacamp.com/learn/courses/reshaping-data-with-tidyr?cf-exp=comm--ai-native-cdp-layout%3Aon>
+:::
+
+## Lecture 9
+Date: 2026-11-27
+
+### Goals
+
+-   Parse a JSON file to a list or a data frame
+
+-   Extract information from nested data frame columns
+
+### Presentations
+
+[https://ufal.github.io/NPFL112/17_from_json.html](https://ufal.github.io/NPFL112/17_from_json.html "https://ufal.github.io/NPFL112/17_from_json.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/17_from_json.html "https://ufal.github.io/NPFL112/slides_html/17_from_json.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/17_from_json.pdf){.url}
+
+### Activities
+
+You can try and download this file: [https://api.fbi.gov/\\\@wanted](https://api.fbi.gov/@wanted){.uri} into a folder where you have writing permissions. Call the file whatever you want. The correct suffix is `.json`.
+
+```{r}
+my_destination_file <- "~/DATA.NPFL112/2026-FBI-wanted.json"
+download.file(url = "https://api.fbi.gov/@wanted", 
+  destfile = my_destination_file, 
+  mode = "wb") 
+#Use wb with Excel files on Windows, here not necessary
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| results: hide
+library(jsonlite)
+library(tidyverse)
+fbi_simple_list <- jsonlite::fromJSON(my_destination_file, 
+  simplifyDataFrame = TRUE, 
+  simplifyMatrix = TRUE, 
+  simplifyVector = TRUE, 
+  flatten = TRUE)
+```
+
+```{r}
+# with complex structures, explore calling arguments of str() to display just a little
+str(fbi_simple_list, max.level = 2, vec.len = 0, list.len = 10)
+
+```
+
+How many wanted persons are there in the `items` data frame? You can tell from the `str` output above.
+
+```{r}
+fbi_complex_list <- jsonlite::fromJSON(my_destination_file, 
+  simplifyVector = FALSE, 
+  simplifyMatrix = FALSE, 
+  simplifyDataFrame = FALSE,
+  flatten = FALSE )
+```
+
+```{r}
+str(fbi_complex_list, max.level = 3, vec.len = 1, list.len = 4)
+```
+
+### Assignments
+
+::: callout-caution
+## Assignment : 9 Deadline: May 14
+
+#### Matrix, List (Intro to R)
+
+-   <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-3-matrices-3?ex=1>
+
+-   <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-6-lists?ex=1>
+
+#### Condition, Loop, Function
+
+-   <https://campus.datacamp.com/courses/intermediate-r/chapter-1-conditionals-and-control-flow?ex=1>
+
+-   <https://campus.datacamp.com/courses/intermediate-r/chapter-2-loops?ex=1>
+
+-   <https://campus.datacamp.com/courses/intermediate-r/chapter-3-functions?ex=1>
+
+    ... As always, you cannot but benefit from completing the entire Intermediate R course! 😉
+
+#### Iteration over a list with `purrr`
+
+-   alternatively, you can learn the `apply` functions from base R, but this is more comfortable: possibly easier to learn and (unlike `apply`) would never surprise you with transforming your data frame to a matrix. The entire `purrr` course is worth working through!
+
+<https://app.datacamp.com/learn/courses/foundations-of-functional-programming-with-purrr>
+:::
+
+<!-- ## May 1, May 8: two-week gap -->
+
+<!-- ### Goals -->
+
+<!-- -   Regular expressions basics & complete as much as you can from all other topics -->
+
+<!-- ### Assignments -->
+
+<!-- ::: callout-caution -->
+<!-- ## Assignment : 10 Deadline: -- -->
+
+<!-- [Regular expressions tutorial (one afternoon)](https://www.regular-expressions.info/tutorial.html "https://www.regular-expressions.info/tutorial.html") -->
+
+<!-- <https://app.datacamp.com/learn/courses/intermediate-regular-expressions-in-r> -->
+<!-- ::: -->
+
+<!-- ## Lecture 10.  -->
+<!-- Date: 2026-12-04 -->
+
+<!-- ### Goals -->
+
+<!-- -   ways to iterate over an object (mostly a list) -->
+
+<!--     -   `for` loop -->
+
+<!--     -   `purrr::map` -->
+
+<!-- ### Presentations -->
+
+<!-- No presentation -->
+
+<!-- ### Activities -->
+
+<!-- We were training the `map` function in the context of harvesting the entire FBI Wanted database page by page, extracting the items (the individual records) and bind them into a single data frame. Here is the script we created: <https://ufal.github.io/FBI_extrakce.R> -->
+
+<!-- When you don't know better, use a classic loop. Train on the FBI example from April 24 like this: -->
+
+<!-- ```{r} -->
+<!-- fbi_simple_list <- jsonlite::read_json("~/DATA.NPFL112/2026-FBI-wanted.json",  -->
+<!--   simplifyVector = TRUE) -->
+
+<!-- ``` -->
+
+<!-- You want to bind the data frames by rows (`dplyr::bind_rows`).\ -->
+<!-- First create an empty data frame. -->
+
+<!-- ```{r} -->
+<!-- items_df <- tibble() -->
+<!-- str(items_df) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- for (i in seq_along(fbi_simple_list$items)){ -->
+<!--   items_df <- items_df %>% bind_rows(fbi_simple_list$items[i]) -->
+<!-- } -->
+<!-- nrow(items_df) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- colnames(items_df)  -->
+<!-- ``` -->
+
+<!-- ## Lecture 11 -->
+<!-- Date: 2026-12-11 -->
+
+<!-- ### Goals -->
+
+<!-- a first glance of interpreting a linear regression model (on the `ggplot2::diamonds` data set) -->
+
+<!-- -   correlation vs. linear model -->
+
+<!-- -   `broom::tidy()` for outputs of common statistical test functions -->
+
+<!-- -   *rise over run* to compute slope by hand -->
+
+<!-- -    -->
+
+<!-- ### Presentations -->
+
+<!-- [https://ufal.github.io/NPFL112/18_LinearRegression.html](https://ufal.github.io/NPFL112/18_LinearRegression.html "https://ufal.github.io/NPFL112/18_LinearRegression.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/18_LinearRegression.html "https://ufal.github.io/NPFL112/slides_html/18_LinearRegression.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/18_LinearRegression.pdf "https://ufal.github.io/NPFL112/slides_pdf/18_LinearRegression.html") -->
+
+<!-- ### Activities -->
+
+<!-- Wrap-up chat -->
