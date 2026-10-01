@@ -25,26 +25,43 @@ editor: visual
 -   This website: <https://ufal.github.io/NPFL112/>
 
 -   We often work with data from [Gapminder.org](https://www.gapminder.org/ "https://www.gapminder.org/"){.url}, particularly this GitHub repository: [https://github.com/open-numbers/ddf\--gapminder\--systema_globalis](https://github.com/open-numbers/ddf--gapminder--systema_globalis "https://github.com/open-numbers/ddf--gapminder--systema_globalis"){.url}
+
+-   Grading requirements and details: <https://ufal.mff.cuni.cz/courses/r-for-humanities/english>
+
+    -   DH certificate track: All four assignments from the DH realm (indicated) + NPFL112-assignments
+
+    -   outside DH certificate track: Choose from any assignments, four well done make Grade A.
 :::
 
 ## Lecture 1.
+
 Date: 2026-10-02
 
 ### Goals
 
 <!-- -   access computer network in the lab (save your credentials) -->
+
 -   access the Jupyter Hub RStudio (save your credentials)
 -   access DataCamp (create your account with the same e-mail address with which you enrolled)
 -   Overview of
     -   the course scope
     -   grading requirements
--   Know where to find presentations online:
-    <!-- -   https://github.com/ufal/NPFL112?tab=readme-ov-file or -->
-    - https://ufal.github.io/NPFL112/
+-   Know where to find presentations online: <!-- -   https://github.com/ufal/NPFL112?tab=readme-ov-file or -->
+    -   https://ufal.github.io/NPFL112/
     -   Press **s** to display speaker view with ample fluent notes
 -   Know how to download presentations in other formats (pdf, html pages) from RStudio on Jupyter Hub
-    -   `SCRIPTS.NPFL112/pages`
-    -   `SCRIPTS.NPFL112/pdf`
+    -   `SCRIPTS.NPFL112/slides/slides_html`
+    -   `SCRIPTS.NPFL112/slides/slides_pdf`
+
+::: callout-caution
+## Starting Positions Mentimeter
+
+Participants' link: <https://www.menti.com/alxeutazt9en>
+
+Admin needs to log in at Mentimeter (and open it at MyMentis \> Dashboard \> NPFL112_PersonalLearningGoals \> ... \> Share with Participants) here:
+
+<https://www.mentimeter.com/app/presentation/alz5fpjhnz8kjfbe447psbvptz9pupr6/edit>
+:::
 
 ### Presentations
 
@@ -64,29 +81,32 @@ Date: 2026-10-02
 
 4.  Local download example: Download to your computer `~/SCRIPTS.NPFL112/slides/slides_pdf/04_NavigatingRStudioForProgramming.pdf`.
 
-5.  Log in at [https://www.datacamp.com/users/sign_in](https://www.datacamp.com/users/sign_in){.url} (you should have received an invite from the DataCamp system Feb 19, around 9:30 PM). Sign up with the same e-mail address with which you have enrolled this course. If there is time left, start with your first home assignment.
+5.  Log in at [https://www.datacamp.com/users/sign_in](https://www.datacamp.com/users/sign_in){.url} (you should have received an invite from the DataCamp system on Tuesday Sep 29 or later). Sign up with the same e-mail address with which you have enrolled in this course. If there is time left, start with your first home assignment.
 
 ### Assignments
 
 ::: callout-caution
-## Assignment 1: Deadline: Thu Feb 26, 9:00 AM
+## Assignment 1: Deadline: Fri Oct 9 , 9:30 AM
 
 In RStudio, make sure that you have created your folder called `SUBMISSIONS.NPFL112`.
 
 Open the folder `HOMEWORK_ASSIGNMENTS`. Select (tick) the file `HW_001.R` and copy it into your `SUBMISSIONS.NPFL112` folder.
 
-Open this file, read the instructions and proceed accordingly. Go through the entire file but do not spend more than 30 minutes with it. If you use AI, only adopt responses that you have fully understood. The goal is to make you *notice, learn,* *and internalize* something - or make your initial self-assessment.
+If you were present in the first lecture and received a printout of the file, write your responses directly into the printout. Please use a legible handwriting!
+
+Open this file, read the instructions and proceed accordingly. Go through the entire file but do not spend more than 30 minutes with it. You are going to exchange the hard copy of your solution with a peer in the next session (hence the legibility appeal). If you are more comfortable typing straight in the file rather than writing in the paper sheets, please print out the result with no more than one page per A4 page (keep the font size eye-friendly). Be ready to explain for your peer what you know (or guess) about the code.
 :::
 
 ::: callout-caution
-## Assignment 2: Deadline: 
+## Assignment 2: Deadline: Fri, Oct 9, 9:30 AM
 
-<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1>
+Data Camp, Introduction to R, chapter *Intro to Basics* <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1>
 :::
 
 ------------------------------------------------------------------------
 
-## Lecture 2. 
+## Lecture 2.
+
 Date: 2026-10-09
 
 ### Goals
@@ -137,7 +157,8 @@ Date: 2026-10-09
 
 ------------------------------------------------------------------------
 
-## Lecture 3. 
+## Lecture 3.
+
 Date: 2026-10-16
 
 ### Goals
@@ -174,10 +195,9 @@ and check out whether you can describe most of the transformations - in your own
 ### Assignments
 
 ::: callout-caution
-
 ## DH-Certificate Assignment No 1, deadline Thu Oct 22, 16:00
 
-In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work. Render it as html. 
+In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work. Render it as html.
 
 ## Assignment 4: Deadline: Fri Mar 20
 
@@ -277,6 +297,7 @@ Do [this exercise](https://ufal.github.io/NPFL112/HW02.html "https://ufal.github
 :::
 
 ## Lecture 5
+
 Date: 2026-10-30
 
 ### Goals
@@ -313,8 +334,8 @@ Group work on paper: interpret someone elses' code in greatest possible detail. 
 
 Here is the [clue to the exercise](https://ufal.github.io/NPFL112/T05_BillionairesBrokenDown.html "https://ufal.github.io/NPFL112/T05_BillionairesBrokenDown.html"){.url} - the code broken down into meaningful chunks and explained. [static html](https://ufal.github.io/NPFL112/slides_html/T05_BillionairesBrokenDown.html) [pdf](https://ufal.github.io/NPFL112/slides_pdf/T05_BillionairesBrokenDown.pdf "https://ufal.github.io/NPFL112/slides_pdf/T05_BillionairesBrokenDown.pdf")
 
-
 ## Lecture 7
+
 Date: 2026-11-13
 
 Deadline for HW02 was April 8, noon.
@@ -350,6 +371,7 @@ Deadline for HW02 was April 8, noon.
 :::
 
 ## Lecture 8
+
 Date: 2026-11-20
 
 ### Goals
@@ -389,6 +411,7 @@ Self-paced exploration of operations on strings with `stringr` on Mentimeter <ht
 :::
 
 ## Lecture 9
+
 Date: 2026-11-27
 
 ### Goals
@@ -483,14 +506,17 @@ str(fbi_complex_list, max.level = 3, vec.len = 1, list.len = 4)
 <!-- ### Assignments -->
 
 <!-- ::: callout-caution -->
+
 <!-- ## Assignment : 10 Deadline: -- -->
 
 <!-- [Regular expressions tutorial (one afternoon)](https://www.regular-expressions.info/tutorial.html "https://www.regular-expressions.info/tutorial.html") -->
 
 <!-- <https://app.datacamp.com/learn/courses/intermediate-regular-expressions-in-r> -->
+
 <!-- ::: -->
 
 <!-- ## Lecture 10.  -->
+
 <!-- Date: 2026-12-04 -->
 
 <!-- ### Goals -->
@@ -512,31 +538,45 @@ str(fbi_complex_list, max.level = 3, vec.len = 1, list.len = 4)
 <!-- When you don't know better, use a classic loop. Train on the FBI example from April 24 like this: -->
 
 <!-- ```{r} -->
+
 <!-- fbi_simple_list <- jsonlite::read_json("~/DATA.NPFL112/2026-FBI-wanted.json",  -->
+
 <!--   simplifyVector = TRUE) -->
 
 <!-- ``` -->
 
 <!-- You want to bind the data frames by rows (`dplyr::bind_rows`).\ -->
+
 <!-- First create an empty data frame. -->
 
 <!-- ```{r} -->
+
 <!-- items_df <- tibble() -->
+
 <!-- str(items_df) -->
+
 <!-- ``` -->
 
 <!-- ```{r} -->
+
 <!-- for (i in seq_along(fbi_simple_list$items)){ -->
+
 <!--   items_df <- items_df %>% bind_rows(fbi_simple_list$items[i]) -->
+
 <!-- } -->
+
 <!-- nrow(items_df) -->
+
 <!-- ``` -->
 
 <!-- ```{r} -->
+
 <!-- colnames(items_df)  -->
+
 <!-- ``` -->
 
 <!-- ## Lecture 11 -->
+
 <!-- Date: 2026-12-11 -->
 
 <!-- ### Goals -->
