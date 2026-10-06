@@ -1,0 +1,94 @@
+---
+title: "Second_lecture_subsetting"
+format: pdf
+editor: visual
+---
+
+## Vector subsetting by position
+
+Subsetting means that you extract some elements from the vector
+
+```{r}
+people <- c("Peter", "Jane", "Tom", "Paul")
+weights <- c(90, 65, 67, 74)
+people[1]
+people[1:3]
+people[c(1,3)]
+people[-c(2:4)]
+```
+
+## Vector subsetting by a condition
+
+```{r}
+weights[weights >= 67]
+```
+
+Look how the condition actually reads. What is it? Save it in a variable and inspect its class.
+
+```{r}
+weights >= 67
+```
+
+```{r}
+test_variable <- weights >= 67
+class(test_variable)
+```
+
+So you actually give weights a logical vector, and R picks just the positions, where the element is TRUE:
+
+```{r}
+weights[c(TRUE, FALSE, TRUE, TRUE)]
+```
+
+There is a function that gives you the positions where the condition is TRUE
+
+```{r}
+which(weights >= 67)
+```
+
+## Subsetting a data frame
+
+When two vectors have equal length, we can combine them into a data frame. We will use the base R built-in function `data.frame`.
+
+Look at the table: four rows, two columns. In square brackets: two positions, first concerns rows, second concerns columns.
+
+```{r}
+our_df <- data.frame(people, weights)
+our_df
+```
+
+Give me just the first row:
+
+```{r}
+our_df[1, ]
+```
+
+Give me just the first column - several ways to do it
+
+```{r}
+our_df[1]
+```
+
+or like this
+
+```{r}
+our_df["people"]
+```
+
+or like this
+
+```{r}
+our_df[, 1]
+```
+
+or like this
+
+```{r}
+our_df$people
+```
+
+Give me some rows and only the second column
+
+```{r}
+our_df[c(1,4), 2]
+```

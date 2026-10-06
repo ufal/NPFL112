@@ -73,15 +73,13 @@ Admin needs to log in at Mentimeter (and open it at MyMentis \> Dashboard \> NPF
 
 #### In R Studio
 
-1.  Log in at RStudio
+1.  Log in at RStudio.
 
-2.  In the Files tab (right bottom pane), create a new directory (folder) and call it - exactly! - `SUBMISSIONS.NPFL112` .
+2.  Explore the folders `SCRIPTS.NPFL112` , `DATA.NPFL112`
 
-3.  Explore the folders `SCRIPTS.NPFL112` , `DATA.NPFL112`
+3.  Local download example: Download to your computer `~/SCRIPTS.NPFL112/slides/slides_pdf/04_NavigatingRStudioForProgramming.pdf`.
 
-4.  Local download example: Download to your computer `~/SCRIPTS.NPFL112/slides/slides_pdf/04_NavigatingRStudioForProgramming.pdf`.
-
-5.  Log in at [https://www.datacamp.com/users/sign_in](https://www.datacamp.com/users/sign_in){.url} (you should have received an invite from the DataCamp system on Tuesday Sep 29 or later). Sign up with the same e-mail address with which you have enrolled in this course. If there is time left, start with your first home assignment.
+4.  Log in at [https://www.datacamp.com/users/sign_in](https://www.datacamp.com/users/sign_in){.url} (you should have received an invite from the DataCamp system on Tuesday Sep 29 or later). Sign up with the same e-mail address with which you have enrolled in this course. If there is time left, start with your first home assignment.
 
 ### Assignments
 
@@ -140,13 +138,18 @@ Date: 2026-10-09
 1.  Lecture start: group work, exchange about `HW_001.R`: During your homework, which structures/patterns caught your eye?
 2.  Hands-on together: Copy the file `SCRIPTS.NPFL112/05_VariablesFunctions.qmd` to your home directory.
     1.  Open it and run (execute) all code chunks. Watch what happens.
-    2.  When you are done with executing the chunks, find the "Render" button. Explore the rendering options. Render the file as an html file. It will appear in the same directory where you had the corresponding `qmd` file and will inherit its name. Open the resulting html file in a web browser.
-    3.  Open a new Quarto `.qmd` file. Render it by hitting the Render button.
+    2.  Open a new Quarto `.qmd` file - give it a title in the interactive interface and save it under a name in your home directory.
+        1.  Toggle the Source and visual mode and inspect the source code.
+        2.  Replace the template heading with your own (e.g. "Lecture notes").
+        3.  There will be a short instructional session. Try to follow and take notes. When the instructions contain code, type the code into an executable code chunk. Keyboard shortcut: Ctrl + Alt + i.
+        4.  The instruction script is here (for future reference): [https://ufal.github.io/NPFL112/second_lecture_notetaking_exercise_quarto.qmd](#0){.uri}. Students do not see it during the instruction, which proceeds as a live coding session.
 
 ### Assignments
 
 ::: callout-caution
-## Assignment 3. Deadline: Fri Mar 6, 9:00 (always entire chapters!)
+## Assignment 3. Deadline: Fri Oct 16, 9:30 (always entire chapters!)
+
+The next lecture is going to assume familiarity with the concepts covered in these exercises.
 
 <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-2-vectors-2?ex=1>
 
@@ -199,9 +202,9 @@ and check out whether you can describe most of the transformations - in your own
 
 In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work. Render it as html.
 
-## Assignment 4: Deadline: Fri Mar 20
+## Assignment 4: Deadline: Fri Oct 23
 
-<https://app.datacamp.com/learn/courses/introduction-to-the-tidyverse?cf-exp=comm--ai-native-cdp-layout%3Aon>
+<https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-wrangling-1?ex=1>
 :::
 
 ------------------------------------------------------------------------
