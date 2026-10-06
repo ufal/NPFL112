@@ -179,7 +179,7 @@ Date: 2026-10-16
 
 ### Presentations
 
-Finish <https://ufal.github.io/NPFL112/05_VariablesFunctions.html> (from slide *No Coercion with errors*).
+<!--# Finish https://ufal.github.io/NPFL112/05_VariablesFunctions.html (from slide No Coercion with errors). -->
 
 ::: callout-note
 ## Activity to new topic
@@ -200,7 +200,7 @@ and check out whether you can describe most of the transformations - in your own
 ::: callout-caution
 ## DH-Certificate Assignment No 1, deadline Thu Oct 22, 16:00
 
-In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work. Render it as html.
+In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work (in R terms, your result is not going to be a list, but a vector). Render it as html. Use the function `list.files`.
 
 ## Assignment 4: Deadline: Fri Oct 23
 
@@ -231,9 +231,11 @@ Date: 2026-10-23
 
 ### Activities
 
-Mentimeter WarmUp: [https://www.menti.com/](https://www.menti.com/ "https://www.menti.com/"){.url}
+::: callout-caution
+## Learn to use the Ggplot2 cheat sheet
 
-Teacher's GUI: [https://www.mentimeter.com](https://www.mentimeter.com "https://www.mentimeter.com"){.url}, presentation *Dplyr and ggplot2 for beginners.* Needs login and the presentation must be launched.
+We code along the cheat sheet. Explore the example data sets (e.g. *economics* in the Geoms section), generate the described plots and discuss their use cases.
+:::
 
 #### Your first data report in Quarto: tracking the world's billionaires
 
@@ -288,16 +290,28 @@ Teacher's GUI: [https://www.mentimeter.com](https://www.mentimeter.com "https://
 ### Assignments
 
 ::: callout-caution
-## Assignment 5: Deadline: Mar 27
+## Assignment 5:  Deadline Dec 1, 2026 - A rescue task for those who have missed much
 
 Finish the billionaires exercise from this lecture and place it into your `SUBMISSIONS.NPFL112` folder.
 :::
 
 ::: callout-caution
-## Assignment 6: Deadline: April 8, noon
+## DataCamp: Deadline Oct 30, 2026
 
-Do [this exercise](https://ufal.github.io/NPFL112/HW02.html "https://ufal.github.io/NPFL112/HW02.html") and place the resulting file (R or .qmd from a Quarto file) into your `SUBMISSIONS.NPFL112` folder. If you produce a `.qmd` file (you are encouraged to!), please also add a rendered file (html or pdf).
+<https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-visualization?ex=1>
+
+<https://campus.datacamp.com/courses/introduction-to-data-visualization-with-ggplot2/introduction-066be288-a4a7-45c4-997e-1cad3b920f33?ex=1>
+
+<https://campus.datacamp.com/courses/introduction-to-data-visualization-with-ggplot2/aesthetics?ex=1>
 :::
+
+<!-- ::: callout-caution -->
+
+<!-- ## Assignment 6: Deadline: April 8, noon -->
+
+<!-- Do [this exercise](https://ufal.github.io/NPFL112/HW02.html "https://ufal.github.io/NPFL112/HW02.html") and place the resulting file (R or .qmd from a Quarto file) into your `SUBMISSIONS.NPFL112` folder. If you produce a `.qmd` file (you are encouraged to!), please also add a rendered file (html or pdf). -->
+
+<!-- ::: -->
 
 ## Lecture 5
 
@@ -340,8 +354,6 @@ Here is the [clue to the exercise](https://ufal.github.io/NPFL112/T05_Billionair
 ## Lecture 7
 
 Date: 2026-11-13
-
-Deadline for HW02 was April 8, noon.
 
 ### Goals
 
@@ -601,3 +613,9 @@ str(fbi_complex_list, max.level = 3, vec.len = 1, list.len = 4)
 <!-- ### Activities -->
 
 <!-- Wrap-up chat -->
+
+<https://www.pivorohozec.cz/data/thumb//66c908cc8843c66429fa2e81133b26ba.png>
+
+Mentimeter WarmUp: [https://www.menti.com/alqqbae98hr9](https://www.menti.com/alqqbae98hr9){.url}
+
+Teacher's GUI: <https://www.mentimeter.com/app/presentation/alvmocaifs5rjtqoqo2mnf5ybroz9gwj/edit?question=je3o3gyg59se>, presentation *Dplyr and ggplot2 for beginners.* Needs login and the presentation must be launched.
