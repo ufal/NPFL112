@@ -1,5 +1,5 @@
 ---
-title: "Winter term 2026 NPFL112"
+title: "xxxWinter term 2026 NPFL112"
 format: 
   pdf: 
     self-contained: true
@@ -37,7 +37,7 @@ editor: visual
 ## Lecture 1 - 2026-10-02
 [https://ufal.github.io/NPFL112/Lecture_01.html](https://ufal.github.io/NPFL112/Lecture_01.html)
 
-
+dd
 ## Lecture 2.
 
 Date: 2026-10-09
