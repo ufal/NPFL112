@@ -65,6 +65,7 @@ Date: 2026-10-30
 
 Date: 2026-11-06
 
+
 The lecture has been cancelled due to collision with midterm exams at the Faculty of Social Sciences.
 
 The homework check revealed fundamental issues with reporting in Markdown. This [self-study on DataCamp](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/getting-started-with-r-markdown?ex=1) ought to help clarify the misconceptions (Chapters [1](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/getting-started-with-r-markdown?ex=1) and [2](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/adding-analyses-and-visualizations?ex=1)). The course is about the RMarkdown editor, but the same applies to the Quarto editor.
