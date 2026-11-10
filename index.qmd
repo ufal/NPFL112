@@ -1,5 +1,5 @@
 ---
-title: "xxxWinter term 2026 NPFL112"
+title: "Winter term 2026 NPFL112"
 format: 
   pdf: 
     self-contained: true
@@ -35,174 +35,31 @@ editor: visual
 :::
 
 ## Lecture 1 - 2026-10-02
+
 [https://ufal.github.io/NPFL112/Lecture_01.html](https://ufal.github.io/NPFL112/Lecture_01.html)
 
-dd
+
 ## Lecture 2.
 
 Date: 2026-10-09
 
-### Goals
-
-1.  Internalize the following concepts:
-
-    1.  Data types/classes (numeric, character, boolean)
-
-    2.  Data type coercion (what happens to your numeric vector when you blend in a non-digit, etc. )
-
-    3.  Data structures (vectors, data frames/tibbles)
-
-    4.  Functions and their arguments
-
-    5.  Working directory
-
-2.  Learn to invoke and read the built-in R Help
-
-3.  Open a Quarto (.qmd) file and run code chunks manually
-
-### Presentations
-
-[https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html](https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html "https://ufal.github.io/NPFL112/04_NavigatingRStudioForProgramming.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/04_NavigatingRStudioForProgramming.html "https://ufal.github.io/NPFL112/slides_html/04_NavigatingRStudioForProgramming.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/04_NavigatingRStudioForProgramming.pdf "https://ufal.github.io/NPFL112/slides_pdf/04_NavigatingRStudioForProgramming.pdf")
-
-[https://ufal.github.io/NPFL112/05_VariablesFunctions.html](https://ufal.github.io/NPFL112/05_VariablesFunctions.html "https://ufal.github.io/NPFL112/05_VariablesFunctions.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/05_VariablesFunctions.html "https://ufal.github.io/NPFL112/slides_html/05_VariablesFunctions.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/05_VariablesFunctions.pdf "https://ufal.github.io/NPFL112/slides_pdf/05_VariablesFunctions.pdf")
-
-<https://ufal.github.io/NPFL112/06_WorkingDirectory.html> [static html](https://ufal.github.io/NPFL112/slides_html/06_WorkingDirectory.html "https://ufal.github.io/NPFL112/slides_html/06_WorkingDirectory.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/06_WorkingDirectory.pdf "https://ufal.github.io/NPFL112/slides_pdf/06_WorkingDirectory.pdf")
-
-### Activities
-
-1.  Lecture start: group work, exchange about `HW_001.R`: During your homework, which structures/patterns caught your eye?
-2.  Hands-on together: Copy the file `SCRIPTS.NPFL112/05_VariablesFunctions.qmd` to your home directory.
-    1.  Open it and run (execute) all code chunks. Watch what happens.
-    2.  Open a new Quarto `.qmd` file - give it a title in the interactive interface and save it under a name in your home directory.
-        1.  Toggle the Source and visual mode and inspect the source code.
-        2.  Replace the template heading with your own (e.g. "Lecture notes").
-        3.  There will be a short instructional session. Try to follow and take notes. When the instructions contain code, type the code into an executable code chunk. Keyboard shortcut: Ctrl + Alt + i.
-        4.  The instruction script is here (for future reference): [https://ufal.github.io/NPFL112/second_lecture_notetaking_exercise_quarto.qmd](#0){.uri}. Students do not see it during the instruction, which proceeds as a live coding session.
-
-### Assignments
-
-::: callout-caution
-## Assignment 3. Deadline: Fri Oct 16, 9:30 (always entire chapters!)
-
-The next lecture is going to assume familiarity with the concepts covered in these exercises.
-
-<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-2-vectors-2?ex=1>
-
-<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-5-data-frames?ex=1>
-
-<https://campus.datacamp.com/courses/free-introduction-to-r/chapter-4-factors-4?ex=1>
-:::
-
-------------------------------------------------------------------------
+[https://ufal.github.io/NPFL112/Lecture_02.html](https://ufal.github.io/NPFL112/Lecture_02.html)
 
 ## Lecture 3.
 
-Date: 2026-10-16
-
-### Goals
-
-1.  Internalize the following concepts:
-    1.  Vector recycling
-    2.  Vector element vs. vector position index
-    3.  logical operators (`>`,`<`, `>=`, `<=`, `!=`, `==`, `&`, `|`)
-2.  Know how to:
-    1.  Extract elements from a vector (by position or by a condition expressed by a logical operator).
-    2.  Extract values from data frames by rows and columns in base R.
-    3.  Read a tabular file (`.csv`) into a data frame object.
-    4.  Write a data frame object into a tabular file (`.csv`)
-3.  Recognize transformations of tabular data (no coding): filtering rows, selecting columns, aggregations, aggregations in groups
-
-### Presentations
-
-<!--# Finish https://ufal.github.io/NPFL112/05_VariablesFunctions.html (from slide No Coercion with errors). -->
-
-::: callout-note
-## Activity to new topic
-
-table transformations, see below
-:::
-
-<https://ufal.github.io/NPFL112/07_Exploring_dataframes.html> [static html](https://ufal.github.io/NPFL112/slides_html/07_Exploring_dataframes.html "https://ufal.github.io/NPFL112/slides_html/07_Exploring_dataframes.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/07_Exploring_dataframes.pdf "https://ufal.github.io/NPFL112/slides_pdf/07_Exploring_dataframes.pdf")
-
-### Activities
-
-Look at the (printed) tables and keep them ready at your hands. The tables are bits of `gapminder` data, also file `clips_handouts.pdf` in `SCRIPTS.NPFL112` and <https://ufal.github.io/NPFL112/clips_handouts.pdf>. Each sheet contains a pair of tables. What do you need to do to the table on the left to obtain the table you see to the right? Try your luck in a multiple choice test here: <https://quest.ms.mff.cuni.cz/class-quiz/quiz/NPFL112_02_01_clips>
-
-and check out whether you can describe most of the transformations - in your own words, no scientific jargon, no coding. Note the difficult ones and ask about them after the exercise. Duration: 10 - 15 minutes.
-
-### Assignments
-
-::: callout-caution
-## DH-Certificate Assignment No 1, deadline Thu Oct 22, 16:00
-
-In RStudio, produce a markdown file containing a list of paths leading to the folders containing the datasets available for our work (in R terms, your result is not going to be a list, but a vector). Render it as html. Use the function `list.files`.
-
-## Assignment 4: Deadline: Fri Oct 23
-
-<https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-wrangling-1?ex=1>
-:::
-
-------------------------------------------------------------------------
+[https://ufal.github.io/NPFL112/Lecture_03.html](https://ufal.github.io/NPFL112/Lecture_03.html)
 
 ## Lecture 4
 
 Date: 2026-10-23
 
-### Goals
-
--   Understand these `ggplot2` concepts:
-
-    -   Aesthetic scales and their mapping to variables
-
-    -   Mapping inheritance (where to write the aesthetic mappings)
-
-    -   *Geom/geometry* in `ggplot2`.
-
--   Learn about the `ggplot2` cheatsheet: [https://rstudio.github.io/cheatsheets/data-visualization.pdf](https://rstudio.github.io/cheatsheets/data-visualization.pdf "https://rstudio.github.io/cheatsheets/data-visualization.pdf"){.url} (also in RStudio Help!)
-
-### Presentations
-
-<https://ufal.github.io/NPFL112/08_DiversePlots.html> [static html](https://ufal.github.io/NPFL112/slides_html/08_DiversePlots.html "https://ufal.github.io/NPFL112/slides_html/08_DiversePlots.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/08_DiversePlots.pdf "https://ufal.github.io/NPFL112/slides_pdf/08_DiversePlots.pdf")
-
-### Activities
-
-::: callout-caution
-## Learn to use the Ggplot2 cheat sheet
-
-We code along the cheat sheet. Explore the example data sets (e.g. *economics* in the Geoms section), generate the described plots and discuss their use cases.
-:::
-
-::: callout-caution
-## DataCamp: Deadline Oct 30, 2026
-
-<https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-visualization?ex=1>
-
-<https://campus.datacamp.com/courses/introduction-to-data-visualization-with-ggplot2/introduction-066be288-a4a7-45c4-997e-1cad3b920f33?ex=1>
-
-<https://campus.datacamp.com/courses/introduction-to-data-visualization-with-ggplot2/aesthetics?ex=1>
-:::
-
-<!-- ::: callout-caution -->
-
-<!-- ## Assignment 6: Deadline: April 8, noon -->
-
-<!-- Do [this exercise](https://ufal.github.io/NPFL112/HW02.html "https://ufal.github.io/NPFL112/HW02.html") and place the resulting file (R or .qmd from a Quarto file) into your `SUBMISSIONS.NPFL112` folder. If you produce a `.qmd` file (you are encouraged to!), please also add a rendered file (html or pdf). -->
-
-<!-- ::: -->
+[https://ufal.github.io/NPFL112/Lecture_04.html](https://ufal.github.io/NPFL112/Lecture_04.html)
 
 ## Lecture 5
 
 Date: 2026-10-30
 
-### Goals
-
-We had to finish `ggplot2`: - What is smoothing? How is it plotted? `geom_density` and `geom_smooth`: regression, loess, gam.
-
-The students had already worked with `dplyr` in their home assignments on DataCamp.
-
-### Presentations
-
-[https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html](https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html "https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/09_Aggregations_with_dplyr.html "https://ufal.github.io/NPFL112/slides_html/09_Aggregations_with_dplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/09_Aggregations_with_dplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/09_Aggregations_with_dplyr.pdf")
+[https://ufal.github.io/NPFL112/Lecture_05.html](https://ufal.github.io/NPFL112/Lecture_05.html)
 
 ## Lecture 6
 
