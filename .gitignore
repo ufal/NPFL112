@@ -52,9 +52,4 @@ rsconnect/
 
 # Images folder
 images_ATRIUM/
-=======
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
->>>>>>> 4b75553 (Initial commit of slides project)
+
