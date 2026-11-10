@@ -7,6 +7,8 @@ format:
     toc: false
   html:
     self-contained: true
+    toc: true
+    toc-depth: 3
     embed-resources: true
     output-ext: html
     output-file: index
@@ -33,12 +35,11 @@ editor: visual
     -   outside DH certificate track: Choose from any assignments, four well done make Grade A.
 :::
 
+
 ## Lecture 1.
-
 Date: 2026-10-02
-
+<details>
 ### Goals
-
 <!-- -   access computer network in the lab (save your credentials) -->
 
 -   access the Jupyter Hub RStudio (save your credentials)
@@ -52,6 +53,7 @@ Date: 2026-10-02
 -   Know how to download presentations in other formats (pdf, html pages) from RStudio on Jupyter Hub
     -   `SCRIPTS.NPFL112/slides/slides_html`
     -   `SCRIPTS.NPFL112/slides/slides_pdf`
+    
 
 ::: callout-caution
 ## Starting Positions Mentimeter
@@ -81,6 +83,7 @@ Admin needs to log in at Mentimeter (and open it at MyMentis \> Dashboard \> NPF
 
 4.  Log in at [https://www.datacamp.com/users/sign_in](https://www.datacamp.com/users/sign_in){.url} (you should have received an invite from the DataCamp system on Tuesday Sep 29 or later). Sign up with the same e-mail address with which you have enrolled in this course. If there is time left, start with your first home assignment.
 
+
 ### Assignments
 
 ::: callout-caution
@@ -101,7 +104,7 @@ Open this file, read the instructions and proceed accordingly. Go through the en
 Data Camp, Introduction to R, chapter *Intro to Basics* <https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1>
 :::
 
-------------------------------------------------------------------------
+</details>
 
 ## Lecture 2.
 
@@ -237,8 +240,6 @@ Date: 2026-10-23
 We code along the cheat sheet. Explore the example data sets (e.g. *economics* in the Geoms section), generate the described plots and discuss their use cases.
 :::
 
-
-
 ::: callout-caution
 ## DataCamp: Deadline Oct 30, 2026
 
@@ -262,32 +263,30 @@ We code along the cheat sheet. Explore the example data sets (e.g. *economics* i
 Date: 2026-10-30
 
 ### Goals
-We had to finish `ggplot2`:
-- What is smoothing? How is it plotted? `geom_density` and `geom_smooth`: regression, loess, gam. 
 
-The students had already worked with `dplyr` in their home assignments on DataCamp. 
+We had to finish `ggplot2`: - What is smoothing? How is it plotted? `geom_density` and `geom_smooth`: regression, loess, gam.
+
+The students had already worked with `dplyr` in their home assignments on DataCamp.
 
 ### Presentations
 
 [https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html](https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html "https://ufal.github.io/NPFL112/09_Aggregations_with_dplyr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/09_Aggregations_with_dplyr.html "https://ufal.github.io/NPFL112/slides_html/09_Aggregations_with_dplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/09_Aggregations_with_dplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/09_Aggregations_with_dplyr.pdf")
 
 ## Lecture 6
+
 Date: 2026-11-06
 
 The lecture has been cancelled due to collision with midterm exams at the Faculty of Social Sciences.
 
-The homework check revealed fundamental issues with reporting in Markdown. This [self-study on DataCamp](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/getting-started-with-r-markdown?ex=1) ought to help clarify the misconceptions (Chapters [1](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/getting-started-with-r-markdown?ex=1) and [2](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/adding-analyses-and-visualizations?ex=1)). The course is about the RMarkdown editor, but the same applies to the Quarto editor. 
+The homework check revealed fundamental issues with reporting in Markdown. This [self-study on DataCamp](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/getting-started-with-r-markdown?ex=1) ought to help clarify the misconceptions (Chapters [1](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/getting-started-with-r-markdown?ex=1) and [2](https://app.datacamp.com/campus/courses/reporting-with-rmarkdown/adding-analyses-and-visualizations?ex=1)). The course is about the RMarkdown editor, but the same applies to the Quarto editor.
 
 The key concepts:
 
-- *Executable code chunk* vs. *text*  
-- *Run* vs. *Render*. 
-- YAML header.
+-   *Executable code chunk* vs. *text*
+-   *Run* vs. *Render*.
+-   YAML header.
 
-
-Students are encouraged to complete the entire Reporting course. 
-
-
+Students are encouraged to complete the entire Reporting course.
 
 <!-- [https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html](https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html){.url} [static html](https://ufal.github.io/NPFL112/slides_html/11_Computations_mutate_with_dplyr.html "https://ufal.github.io/NPFL112/slides_html/11_Computations_mutate_with_dplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/11_Computations_mutate_with_dplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/11_Computations_mutate_with_dplyr.pdf") -->
 
@@ -296,8 +295,6 @@ Students are encouraged to complete the entire Reporting course.
 <!-- Look again at the [worksheets with data frames](https://ufal.github.io/NPFL112/clips_handouts.pdf "https://ufal.github.io/NPFL112/clips_handouts.pdf"). Do not take them out of their plastic sleeves. From the label sheet, pick for each data frame sheet a label that encodes the transformation of the left table into the right table. -->
 
 <!-- ### Assignments -->
-
-
 
 <!-- ## Lecture 6 -->
 
@@ -315,13 +312,9 @@ Students are encouraged to complete the entire Reporting course.
 
 Date: 2026-11-13
 
-A lecture between two cancelled lectures. 
-
-
-
+A lecture between two cancelled lectures.
 
 ### Goals
-
 
 -   Internalize the concept of relational database
 
@@ -342,9 +335,11 @@ A lecture between two cancelled lectures.
 [https://ufal.github.io/NPFL112/12_JoiningDplyr.html](https://ufal.github.io/NPFL112/12_JoiningDplyr.html "https://ufal.github.io/NPFL112/12_JoiningDplyr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/12_JoiningDplyr.html "https://ufal.github.io/NPFL112/slides_html/12_JoiningDplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/12_JoiningDplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/12_JoiningDplyr.pdf")
 
 ### Activities
+
 Start the assignment (see below)
 
 ### Assignments
+
 #### Your first data report in Quarto: tracking the world's billionaires
 
 1.  Open a new Quarto (`.qmd)` file (a Document, but Presentation would be fine, too).
@@ -395,19 +390,14 @@ Start the assignment (see below)
 
 16. Now replace *html* with *pdf* in the YAML header and hit the Render button again. If you get an error message, install a package called `tinytex` and try again without explicitly calling/mounting/activating it. RStudio ought to do it by itself. If you do not get a pdf file, give up. Make a note about this failure in your file and re-render it as html. That always works.
 
-
 ::: callout-caution
 ## Assignment : 7 Deadline: November 20, 2026
 
 <https://app.datacamp.com/learn/courses/joining-data-with-dplyr?cf-exp=comm--ai-native-cdp-layout%3Aon>
 :::
 
-
-
 ::: callout-note
-
-The content from here below needs updating. Work in progress. 
-
+The content from here below needs updating. Work in progress.
 :::
 
 ## Lecture 8
