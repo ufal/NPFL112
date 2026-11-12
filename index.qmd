@@ -11,6 +11,7 @@ format:
     embed-resources: true
     output-ext: html
     output-file: index
+    child:  
 editor: visual
 ---
 
@@ -104,22 +105,13 @@ Date: 2026-11-13
 
 A lecture between two cancelled lectures.
 
-### Goals
 
--   Internalize the concept of relational database
+[https://ufal.github.io/NPFL112/Lecture_07.html](https://ufal.github.io/NPFL112/Lecture_07.html)
 
-    -   primary key, secondary key
 
-    -   one-to-one, one-to-many...
 
-    -   item pointing to itself
 
--   `dplyr` : *join* dataframes on a pair of columns
-
-    -   inner join vs. left/right join vs. full join
-
-    -   semi join, anti join
-
+## Lecture 8
 ### Presentations
 
 [https://ufal.github.io/NPFL112/12_JoiningDplyr.html](https://ufal.github.io/NPFL112/12_JoiningDplyr.html "https://ufal.github.io/NPFL112/12_JoiningDplyr.html"){.url} [static html](https://ufal.github.io/NPFL112/slides_html/12_JoiningDplyr.html "https://ufal.github.io/NPFL112/slides_html/12_JoiningDplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/12_JoiningDplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/12_JoiningDplyr.pdf")

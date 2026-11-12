@@ -1,0 +1,96 @@
+---
+title: "Lecture 7"
+format: 
+  html:
+    embed-resources: true
+    self-contained: true
+editor: visual
+---
+
+## Goals
+
+Consolidation of skills acquired so far before the next milestone: relational database, joining several tables, on November 27. Next lecture, November 20, is cancelled (compensated with ample self-study assignments).
+
+-   Markdown (Quarto)
+
+-   Data manipulation with `dplyr` on one single table:
+
+    -   `select` (`rename`, `relocate`) columns
+
+        -   helper functions to select columns according to their names (`starts_with`, `ends_with`, `matches`, `contains`)
+
+    -   `filter` rows,
+
+    -   deduplicate rows with `distinct`,
+
+    -   `slice` rows according to
+
+        -   their position,
+
+        -   *n* top/bottom values in a column or several columns,
+
+        -   random sample with and without replacement
+
+    -   `arrange` rows,
+
+    -   `mutate` column (add a new one)
+
+        -   `if_else` inside `mutate`
+
+        -   `across`
+
+        -   `c_across`
+
+    -   `summarize` table,
+
+    -   `group_by`/`ungroup`/`rowwise`
+
+## Activities
+
+### Issue 1
+Copy paste the code below to a file, remove issues and render an html file. 
+
+
+```{r}
+#| results: markup
+#| echo: false
+#| message: false
+#| warning: false
+library(dplyr)
+paste(readLines("Activity_Lecture07_01.txt"),
+             collapse = "\n") %>% 
+  cat()
+  
+```
+
+### Issue 2
+Copy paste the code below to a file, remove issues and render an html file. 
+
+
+```{r}
+#| results: markup
+#| echo: false
+#| message: false
+#| warning: false
+library(dplyr)
+paste(readLines("Activity_Lecture07_02.txt"),
+             collapse = "\n") %>% 
+  cat()
+  
+```
+
+### Data manipulation with dplyr
+Look again at the [worksheets with data frames](https://ufal.github.io/NPFL112/clips_handouts.pdf "https://ufal.github.io/NPFL112/clips_handouts.pdf"). Do not take them out of their plastic sleeves. From the label sheet, pick for each data frame sheet a label that encodes the transformation of the left table into the right table. 
+
+
+[https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html](https://ufal.github.io/NPFL112/11_Computations_mutate_with_dplyr.html){.url} [static html](https://ufal.github.io/NPFL112/slides_html/11_Computations_mutate_with_dplyr.html "https://ufal.github.io/NPFL112/slides_html/11_Computations_mutate_with_dplyr.html") [pdf](https://ufal.github.io/NPFL112/slides_pdf/11_Computations_mutate_with_dplyr.pdf "https://ufal.github.io/NPFL112/slides_pdf/11_Computations_mutate_with_dplyr.pdf") 
+
+
+
+## Homework Assignments
+
+::: callout-caution
+## Homework assignment (obligatory for DH certificate attendants)
+
+Deadline:
+:::
